@@ -7,12 +7,16 @@
 ## Post-Installation
 ```
 conda config --set auto_activate_base false
+# It creates ~/.condarc with following content:
+  auto_activate_base: false
+```
 
+
+# Jupyter notebook
 ```
-It will create `~/.condarc`
-```
-# ~/.condarc
-auto_activate_base: false
+conda install ipykernel
+python -m ipykernel install --user --name lal --display-name "python-lal"
+# It modifies ~/Library/Jupyter/kernels/
 ```
 
 
